@@ -112,6 +112,12 @@ form button{
     /* transition: all .3s ease-out;
      */
 }
+form button a{
+    color: white;
+}
+form button a:visited{
+    color: white;
+}
 button:hover{
     background-color: var(--dark-color);
 }

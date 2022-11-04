@@ -1,177 +1,101 @@
 <!DOCTYPE html>
-<!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style.css">
-     
-    <!----===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Login - Express Sale</title>
+    <link rel="stylesheet" href="style_login.css">
 
-    <title>Admin Gestion Stock</title> 
 </head>
 <body>
-    <nav>
-        <div class="logo-name">
-            <div class="logo-image">
-                <img src="images/logo.png" alt="">
-            </div>
-
-            <span class="logo_name">Express Sale</span>
-        </div>
-
-        <div class="menu-items">
-            <ul class="nav-links">
-                <li><a href="#">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Generale</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Stocks</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Nos Articles</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Commandes</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Historique Achats</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Nos Clients</span>
-                </a></li>
-            </ul>
-            
-            <ul class="logout-mode">
-                <li><a href="#">
-                    <i class="uil uil-signout"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
-
-                <li class="mode">
-                    <a href="#">
-                        <i class="uil uil-moon"></i>
-                    <span class="link-name">Dark Mode</span>
-                </a>
-
-                <div class="mode-toggle">
-                  <span class="switch"></span>
-                </div>
-            </li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="dashboard">
-        <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
-
-            <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Que cherchez-vous ?">
-            </div>
-            
-            <img src="images/profile.jpg" alt="">
-        </div>
-
-        <div class="dash-content">
-            <div class="overview">
-                <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Generale</span>
-                </div>
-
-                <div class="boxes">
-                    <div class="box box1">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Total Likes</span>
-                        <span class="number">50,120</span>
+    <div id="page" class="site login-show">
+        <div class="container">
+            <div class="wrapper">
+                <div class="login">
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a href="#"><span></span></a></div>
+                            <div class="welcome">
+                                <h2>Express <br>Sale</h2>
+                                <p>Connectez-vous pour commencer.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="box box2">
-                        <i class="uil uil-comments"></i>
-                        <span class="text">Comments</span>
-                        <span class="number">20,120</span>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form action="">
+                                <p>
+                                    <label>Email</label>
+                                    <input type="text" placeholder="Enter your email">
+                                </p>
+                                <p>
+                                    <label>Password</label>
+                                    <input type="password" placeholder="Enter password">
+                                </p>
+                                <p class="check">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">Remember me</label>
+                                </p>
+                                <p class="forgot"><a href="#">Forgot password</a></p>
+                                <p><button type="submit"><a href="dashboard.html">Login</a></button></p>
+                            </form>
+                            <div class="afterform">
+                                <p>Pas encore de compte Express Sale ?</p>
+                                <a href="#" class="t-signup">S'inscrire</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="box box3">
-                        <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
-                        <span class="number">10,120</span>
+                </div> 
+                <!-- Login Form -->
+                <div class="signup">
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a href="#"><span></span></a></div>
+                            <div class="welcome">
+                                <h2>Express <br>Sale</h2>
+                                <p>Ready to be creative? <br></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Recent Activity</span>
-                </div>
-
-                <div class="activity-data">
-                    <div class="data names">
-                        <span class="data-title">Name</span>
-                        <span class="data-list">Prem Shahi</span>
-                        <span class="data-list">Deepa Chand</span>
-                        <span class="data-list">Manisha Chand</span>
-                        <span class="data-list">Pratima Shahi</span>
-                        <span class="data-list">Man Shahi</span>
-                        <span class="data-list">Ganesh Chand</span>
-                        <span class="data-list">Bikash Chand</span>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form action="">
+                                <p>
+                                    <label>Full  Name</label>
+                                    <input type="text" placeholder="Full Name">
+                                </p>
+                                <p>
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Enter your email">
+                                </p>
+                                <p class="check">
+                                    <input type="checkbox" id="terms">
+                                    <label for="terms">I agree to all statement include in <a href="#">Term of user</a></label>
+                                </p>
+                                <p><button type="submit">Sign Up</button></p>
+                            </form>
+                            <div class="social">
+                                <p><span>Or Sign Up with</span></p>
+                                <ul>
+                                    <li><a href="" class="google"><ion-icon name="logo-google"></ion-icon></a></li>
+                                    <li><a href="" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                    <li><a href="" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="afterform">
+                                <p>Vous avez déjà un compte</p>
+                                <a href="#" class="t-login">Se connecter</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="data email">
-                        <span class="data-title">Email</span>
-                        <span class="data-list">premshahi@gmail.com</span>
-                        <span class="data-list">deepachand@gmail.com</span>
-                        <span class="data-list">prakashhai@gmail.com</span>
-                        <span class="data-list">manishachand@gmail.com</span>
-                        <span class="data-list">pratimashhai@gmail.com</span>
-                        <span class="data-list">manshahi@gmail.com</span>
-                        <span class="data-list">ganeshchand@gmail.com</span>
-                    </div>
-                    <div class="data joined">
-                        <span class="data-title">Joined</span>
-                        <span class="data-list">2022-02-12</span>
-                        <span class="data-list">2022-02-12</span>
-                        <span class="data-list">2022-02-13</span>
-                        <span class="data-list">2022-02-13</span>
-                        <span class="data-list">2022-02-14</span>
-                        <span class="data-list">2022-02-14</span>
-                        <span class="data-list">2022-02-15</span>
-                    </div>
-                    <div class="data type">
-                        <span class="data-title">Type</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                    </div>
-                    <div class="data status">
-                        <span class="data-title">Status</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                    </div>
-                </div>
+                </div> 
+                <!-- SignUp Form -->
             </div>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script_login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

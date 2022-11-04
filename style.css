@@ -85,7 +85,7 @@ nav .logo-name{
 nav .logo-image{
     display: flex;
     justify-content: center;
-    min-width: 45px;
+    min-width: 45px;    
 }
 nav .logo-image img{
     width: 40px;
